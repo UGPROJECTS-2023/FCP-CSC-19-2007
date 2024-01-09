@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+html {
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #EFF7FF;
+    overflow-x: hidden;
+}
+/* Nav bar */
+nav{
+    /* background: #cab777; */
+    background: #103979;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    line-height: 50px;
+    transition: .14s;
+}
+nav li{
+    height: 50px;
+}
+.logout{
+    /* background: red; */
+    float: right;
+    position: absolute;
+    right: 0;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    margin:0px;
+    font-weight: 600;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+nav a:hover{
+    /* background: #000; */
+    color:#cab777;
+    transition: .43s;
+}
+ 
+nav input{
+    display: none;
+}
+.bar{
+    width: 36px;
+    padding:5px 5px;
+    border: 1px solid #fff;
+    margin-right: 40px;
+    display: none;
+    background-color: #fff;
+}
+
+.bars{
+    box-sizing: border-box;
+    padding: 1.8px;
+    background: #103979;
+    margin: 2px auto;
+    width: 100%;
+    color: #fff;
+
+}
+
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.home ul {
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+}
+.home ul li{
+    margin:15px 0px;
+    padding:10px 0px;
+}
+.home a{
+    text-decoration: none;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #1212;
+    width: 120px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #1212;
+}
+.home a:hover{
+    border: none;
+    background: #cab777;
+    color: #fff;
+    transition: .4s;
+    transform: scale(1.1);
+    box-shadow:none;
+
+}
+.home div{
+    width: 40%;
+    margin:20px auto;
+    font-size: large;
+    text-align: justify;
+}
+.booksCont{
+    background-image:url('./images/books.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.staffCont{
+    background-image:url('./images/woman.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.borrowersCont{
+    background-image:url('./images/walking-man-flat-concept-illustration.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+body{
+    /* background:rgba(83, 208, 208, 0.237) ; */
+}
+.mainStaff{
+    /* background: red; */
+    /* margin: 300px auto; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainStaff div a{
+    text-decoration: none;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 180px;
+    color: #111;
+    box-shadow: 3px 3px 1px 1px grey;
+    line-height: 23px;
+    background: #fff;
+}
+
+.mainStaff div a:hover{
+    box-shadow: none;
+    color: #cab777;
+    border: none;
+}
+.mainStaff div {
+    width: 100px;
+    text-decoration: none;
+}
+
+
+.addStaff{
+    width: 900px;
+    margin: auto;
+}
+.addStaff h2{
+    text-transform: capitalize ;
+    color: #103979;
+    font-size: large;
+    margin: 10px 0px;
+}
+.addStaff form{
+    width: 100%;
+    margin:20px auto;
+    background-color: #103979;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.addStaff form input[type='text'], [type='date'],[type='number']{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0px;
+    border: none;
+    font-size: medium;
+}
+.addStaff form textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0px;
+    border: none;
+    font-size: medium;
+}
+
+.addStaff .submit{
+    background: #cab777;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0px;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+/* Record  */
+.records{
+    width: 90%;
+    margin:20px auto;
+}
+.records table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.records table button{
+    background: none;
+    margin: 4px;
+    border: none;
+
+}
+.records table .update{
+    background-color:#103979;
+    border-radius: 4px;
+}
+.records table .delete{
+    background-color:red;
+    border-radius: 4px;
+}
+.records table a{
+    color: #fff;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    text-decoration: none;
+}
+
+
+.searchDiv{
+    width: 90%;
+    margin:20px auto;
+}
+.searchDiv input{
+    width: 300px;
+    padding:8px;
+    border: none;
+}
+.searchDiv form > button{
+    background: #103979;
+    color: #fff;
+    padding: 5px;
+    border:2px solid #103979 ;
+    cursor: pointer;
+}
+.searchDiv table{
+    border-collapse:collapse;
+    width: 90%;
+    margin: 5px 0px;
+}
+.searchDiv table button{
+    background: none;
+    margin: 4px;
+    border: none;
+
+}
+.searchDiv table .update{
+    background-color:#103979;
+    border-radius: 4px;
+}
+.searchDiv table .delete{
+    background-color:red;
+    border-radius: 4px;
+}
+.searchDiv table a{
+    color: #fff;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    text-decoration: none;
+}
+.SendMail{
+    background: #103979;
+    padding: 5px;
+    color: #fff;
+}
+
+.loginForm{
+    background:#fff;
+    width: 450px;
+    margin:100px auto;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+.loginForm input{
+    width: 70%;
+    padding:10px 10px;
+    margin:16px auto;
+    display: block;
+    border: 1px solid #111;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.loginForm button{
+    width: 70%;
+    padding:10px 10px;
+    margin:16px auto;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    background: #103979;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.errorMsg{
+    color: red;
+    width: 70%;
+    margin:16px auto;
+    display: block;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.borrowerForm{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:931px){
+    .addStaff{
+        width:80%;
+    }
+    .borrowerForm{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:780px){
+    .loginForm{
+        width: 80%;
+    }
+
+    nav {
+        position: relative;
+    }
+    .bar{
+        display: block; 
+        position: absolute;
+        right: 0;
+        top: 10px;
+       box-shadow:  1px 1px 1px 1px #111;
+        /* border-radius: 5px; */
+    } 
+    .bar:hover{
+        cursor:pointer;
+        background: #8cb9b8;
+        border: none;
+        box-shadow: none;
+    }
+
+    nav ul{ 
+        background: #1950a8;
+        position: absolute;
+        top: 51px;
+        height: 100vh;
+        right: -200%;
+        width: 100%;
+        text-align: center;
+        transition: .6s;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding:10px;
+        }
+    
+    nav ul a{
+        /* color: #000;  */
+    }
+    .logout{
+        float: right;
+        position: absolute;
+        top: 260px;
+        padding: 10px;
+    }
+    #bar:checked ~ .nav ul{
+        right: 0%;
+         width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav ul a{
+        width: 100%;
+        text-align: left;
+    }
+    nav ul li:hover{
+        /* background: rgba(0, 0, 0, 0.1); */
+        transition: .2s;
+        color: #cab777;
+        border-bottom: 1px solid #1212;
+        /* border-top: 1px solid #1212; */
+}
+.home{
+    flex-direction: column;
+}
+.home div{
+    width: 90%;
+    /* background: red; */
+}
+.home ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.home ul li{
+    /* background: red; */
+    margin: 4px auto;
+}
+.home a{
+    padding: 6px;
+    width: 100px;
+}
+.mainStaff{
+    flex-direction: column;
+}
+.mainStaff div a{
+    width: 160px;
+    height: 160px;
+}
+.addStaff form{
+    width: 95%;
+}
+.addStaff h2{
+    margin: 20px 50px;
+}
+
+.records {
+    /* background: red; */
+    width: 100%;
+   font-size:smaller;
+}
+.records h3{
+    margin: 10px 7px;
+}
+.searchDiv {
+    /* background: red; */
+    margin: 20px 5px;
+}
+.searchDiv table{
+    /* background: red; */
+    width: 100%;
+    font-size: x-small;
+}
+
+
+}
